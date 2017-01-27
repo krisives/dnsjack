@@ -47,7 +47,7 @@ var bufferifyV6 = function(ip) {
     return Array(4-x.length).fill('0').join("") + x;
   }).join('');
 
-  return Buffer.from(hexIp, 'hex')
+  return Buffer.from(hexIp, 'hex');
 };
 
 var domainify = function(qname) {
